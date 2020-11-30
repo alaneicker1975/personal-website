@@ -1,0 +1,20 @@
+.nav {
+  a {
+    color: $white;
+    font-size: rem(12);
+    font-weight: $font-semibold;
+    text-transform: uppercase;
+
+    &:hover,
+    &.is-active {
+      color: $cyan-500;
+      text-decoration: none;
+    }
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    a {
+      font-size: rem(16);
+    }
+  }
+}

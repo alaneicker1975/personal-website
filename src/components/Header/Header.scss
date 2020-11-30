@@ -1,8 +1,10 @@
 .header {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   height: 100%;
-  padding: rem(0 20);
+  padding: rem(0 16);
 
   &__logo {
     align-items: center;
@@ -11,18 +13,22 @@
     text-decoration: none;
     text-transform: uppercase;
 
+    svg {
+      width: 30px;
+    }
+
     & > * + * {
-      margin-left: rem(8);
+      margin-left: rem(4);
     }
   }
 
-  &__logo-text {
-    font-size: rem(22);
-    font-weight: $font-semibold;
-  }
+  @media (min-width: $breakpoint-medium) {
+    padding: rem(0 20);
 
-  &__logo-strapline {
-    margin-left: rem(8);
-    font-weight: $font-light;
+    &__logo {
+      svg {
+        width: 30px;
+      }
+    }
   }
 }
