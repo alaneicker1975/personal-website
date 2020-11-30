@@ -1,61 +1,29 @@
 @import '../../node_modules/@atomikui/core/dist/styles/main.min.css';
 @import '../../node_modules/@atomikui/core-sass/abstracts/main.scss';
 
-@import './base';
+@import './base', './layout';
 
-.App {
-  align-items: center;
-  color: $white;
-  display: flex;
-  height: 100%;
-  justify-content: center;
+// svg {
+//   -webkit-animation: spin 70s linear infinite;
+//   -moz-animation: spin 70s linear infinite;
+//   animation: spin 70s linear infinite;
+// }
 
-  svg {
-    -webkit-animation: spin 70s linear infinite;
-    -moz-animation: spin 70s linear infinite;
-    animation: spin 70s linear infinite;
-  }
+// @-moz-keyframes spin {
+//   100% {
+//     -moz-transform: rotate(360deg);
+//   }
+// }
 
-  h1 {
-    font-size: rem(70);
-    font-weight: $font-bold;
-    margin-top: rem(16);
-    line-height: 1;
-  }
+// @-webkit-keyframes spin {
+//   100% {
+//     -webkit-transform: rotate(360deg);
+//   }
+// }
 
-  h2 {
-    font-size: rem(36);
-    font-weight: $font-semibold;
-    line-height: 1.2;
-  }
-
-  p {
-    font-size: rem(24);
-    margin-top: rem(20);
-    border-top: 1px solid $blue-gray-700;
-    padding-top: rem(20);
-  }
-
-  a {
-    color: lighten($cyan-600, 5%);
-  }
-}
-
-@-moz-keyframes spin {
-  100% {
-    -moz-transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
+// @keyframes spin {
+//   100% {
+//     -webkit-transform: rotate(360deg);
+//     transform: rotate(360deg);
+//   }
+// }

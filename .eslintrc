@@ -1,4 +1,8 @@
 {
   "parser": "babel-eslint",
-  "extends": "atomikui"
+  "extends": "atomikui",
+  "rules": {
+    "max-len": 0,
+    "import/no-extraneous-dependencies": 0
+  }
 }
