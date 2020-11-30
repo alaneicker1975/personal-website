@@ -6,7 +6,8 @@
     "build": "NODE_ENV=production parcel build src/index.html",
     "dev": "NODE_ENV=development parcel src/index.html --port 3000",
     "start": "node server.js",
-    "lint:js": "eslint 'src/**/*.js' --fix --ignore-pattern '*.test.js'"
+    "lint:js": "eslint 'src/**/*.js' --fix --ignore-pattern '*.test.js'",
+    "lint:scss": "stylelint ./src/**/*.scss  --config .stylelintrc --fix"
   },
   "keywords": [],
   "author": "Alan Eicker",

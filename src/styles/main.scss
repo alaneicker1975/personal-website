@@ -1,21 +1,7 @@
 @import '../../node_modules/@atomikui/core/dist/styles/main.min.css';
 @import '../../node_modules/@atomikui/core-sass/abstracts/main.scss';
 
-html,
-body,
-#root {
-  height: 100%;
-}
-
-body {
-  background: $blue-gray-900;
-  padding: 24px;
-}
-
-main {
-  max-width: 1024px;
-  width: 100%;
-}
+@import './base';
 
 .App {
   align-items: center;

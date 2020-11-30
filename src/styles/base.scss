@@ -1,0 +1,17 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background: $blue-gray-900;
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif !important;
+  font-weight: $font-normal;
+  padding: 24px;
+}
+
+main {
+  max-width: 1024px;
+  width: 100%;
+}
