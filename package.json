@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "description": "Personal Website of Alan Eicker, Front-End Engineer",
   "scripts": {
-    "start": "parcel src/index.html"
+    "build": "NODE_ENV=production parcel build src/index.html",
+    "dev": "NODE_ENV=development parcel src/index.html --port 3000",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "Alan Eicker",
@@ -22,6 +24,7 @@
     "eslint": "^7.14.0",
     "eslint-config-atomikui": "^0.2.0",
     "parcel": "^1.12.4",
+    "react-axe": "^3.5.4",
     "sass": "^1.29.0",
     "stylelint": "^13.8.0",
     "stylelint-config-atomikui": "^0.1.0"

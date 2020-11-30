@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom';
 import { Link } from '@atomikui/core';
 import './styles/main.scss';
 
+if (process.env.NODE_ENV !== 'production') {
+  const axe = require('react-axe');
+  axe(React, ReactDOM, 1000);
+}
+
 const App = () => {
   return (
     <div className="App">
@@ -15,7 +20,7 @@ const App = () => {
             x="0px"
             y="0px"
             viewBox="0 0 100 100"
-            enableCackground="new 0 0 100 100"
+            enableBackground="new 0 0 100 100"
             xmlSpace="preserve"
             width="200"
           >
