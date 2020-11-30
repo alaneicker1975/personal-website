@@ -8,9 +8,13 @@ body {
   background: $blue-gray-900;
   font-family: 'Ubuntu', Arial, Helvetica, sans-serif !important;
   font-weight: $font-normal;
+  line-height: 1.5;
 }
 
-main {
-  max-width: 1024px;
-  width: 100%;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Barlow Condensed', Arial, Helvetica, sans-serif;
 }

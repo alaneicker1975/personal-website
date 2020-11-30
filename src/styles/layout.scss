@@ -6,7 +6,6 @@
   &__header {
     display: flex;
     flex-direction: column;
-    background: darken($blue-gray-900, 4%);
     height: rem(60);
   }
 
@@ -15,7 +14,7 @@
     height: rem(50);
   }
 
-  &__body {
+  &__main {
     height: calc(100vh - 110px);
     overflow: auto;
   }

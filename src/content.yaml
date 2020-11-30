@@ -28,7 +28,7 @@ hero:
   title: Atomik UI
   subtitle: A Library of React Components for Rapid Application Development
   cta:
-    href: https://www.atomikui.com/splash
+    href: https://www.atomikui.com
     text: See it in Action
     title: Atomik UI Styleguide
     target: '_blank'

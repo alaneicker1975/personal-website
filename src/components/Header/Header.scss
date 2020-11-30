@@ -1,9 +1,10 @@
 .header {
+  align-items: center;
+  background: darken($blue-gray-900, 4%);
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   height: 100%;
+  justify-content: space-between;
   padding: rem(0 16);
 
   &__logo {

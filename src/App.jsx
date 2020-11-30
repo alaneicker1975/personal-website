@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import ReactDOM from 'react-dom';
-import { Header } from './components';
+import { Header, Hero } from './components';
 import { AppProvider, AppContext } from './context';
 
 const App = () => {
@@ -23,10 +23,9 @@ const App = () => {
       <div className="layout__header">
         <Header {...header} />
       </div>
-      <div className="layout__body">
-        <main className="layout__main" />
-        <aside className="layout__sidebar" />
-      </div>
+      <main className="layout__main">
+        <Hero {...hero} />
+      </main>
       <div className="layout__footer" />
     </div>
   );

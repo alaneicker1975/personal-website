@@ -6,7 +6,8 @@
 @import './base', './layout';
 
 // component styles
-@import '../components/Header/Header', '../components/Nav/Nav';
+@import '../components/Header/Header', '../components/Nav/Nav',
+  '../components//Hero/Hero';
 
 // svg {
 //   -webkit-animation: spin 70s linear infinite;
