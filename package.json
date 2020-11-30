@@ -1,12 +1,12 @@
 {
   "name": "personal-website",
   "version": "0.1.0",
-  "description": "",
+  "description": "Personal Website of Alan Eicker, Front-End Engineer",
   "scripts": {
     "start": "parcel src/index.html"
   },
   "keywords": [],
-  "author": "",
+  "author": "Alan Eicker",
   "license": "ISC",
   "dependencies": {
     "@atomikui/core": "^0.9.3",
