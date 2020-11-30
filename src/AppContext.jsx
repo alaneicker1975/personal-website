@@ -1,10 +1,11 @@
 import React, { createContext } from 'react';
 import PropTypes from 'prop-types';
+import content from './content.yaml';
 
 const AppContext = createContext({});
 
 const AppProvider = ({ children }) => (
-  <AppContext.Provider>{children}</AppContext.Provider>
+  <AppContext.Provider value={{ content }}>{children}</AppContext.Provider>
 );
 
 AppProvider.propTypes = {

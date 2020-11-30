@@ -1,7 +1,6 @@
-/* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import './App';
 import './styles/main.scss';
 
 (async () => {
@@ -10,5 +9,3 @@ import './styles/main.scss';
     axe(React, ReactDOM, 1000);
   }
 })();
-
-ReactDOM.render(<App />, document.querySelector('#root'));
