@@ -4,6 +4,8 @@
   height: 100%;
 
   &__header {
+    display: flex;
+    flex-direction: column;
     background: darken($blue-gray-900, 4%);
     height: rem(60);
   }

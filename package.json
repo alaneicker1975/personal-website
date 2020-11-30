@@ -17,24 +17,20 @@
     "@atomikui/core-sass": "^0.2.0",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2",
-    "react": "^17.0.1",
+    "react": "17.0.1",
     "react-axe": "^3.5.4",
-    "react-dom": "^17.0.1",
-    "src": "^1.1.2"
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.8",
     "babel-config-atomikui": "^0.1.1",
     "babel-eslint": "^10.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
     "eslint": "^7.14.0",
     "eslint-config-atomikui": "^0.3.2",
     "parcel": "^1.12.4",
     "sass": "^1.29.0",
     "stylelint": "^13.8.0",
     "stylelint-config-atomikui": "^0.1.0"
-  },
-  "alias": {
-    "components": "./src/components",
-    "utilities": "./src/utilities"
   }
 }

@@ -1,19 +1,21 @@
 import React, { useContext } from 'react';
 import ReactDOM from 'react-dom';
-import { Header } from 'components';
-import { AppContext, AppProvider } from './AppContext';
+import { Header } from './components';
+import { AppProvider, AppContext } from './context';
 
 const App = () => {
   const {
-    about,
-    career,
-    contact,
-    corePrinciples,
-    header,
-    hero,
-    footer,
-    preface,
-    socialMedia,
+    content: {
+      about,
+      career,
+      contact,
+      corePrinciples,
+      header,
+      hero,
+      footer,
+      preface,
+      socialMedia,
+    },
   } = useContext(AppContext);
 
   return (
@@ -23,7 +25,7 @@ const App = () => {
       </div>
       <div className="layout__body">
         <main className="layout__main" />
-        <main className="layout__sidebar" />
+        <aside className="layout__sidebar" />
       </div>
       <div className="layout__footer" />
     </div>

@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  padding: rem(0 20);
+
+  &__logo {
+    align-items: center;
+    color: $white;
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    & > * + * {
+      margin-left: rem(8);
+    }
+  }
+
+  &__logo-text {
+    font-size: rem(22);
+    font-weight: $font-semibold;
+  }
+
+  &__logo-strapline {
+    margin-left: rem(8);
+    font-weight: $font-light;
+  }
+}

@@ -1,7 +1,12 @@
+// Atomikui
 @import '../../node_modules/@atomikui/core/dist/styles/main.min.css';
 @import '../../node_modules/@atomikui/core-sass/abstracts/main.scss';
 
+// Global styles
 @import './base', './layout';
+
+// component styles
+@import '../components/Header/Header';
 
 // svg {
 //   -webkit-animation: spin 70s linear infinite;

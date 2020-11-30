@@ -1,13 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Logo } from 'components';
+import { Logo } from '..';
 
-const Header = ({ logoText, mobileLogoText, navItems }) => (
+const Header = ({ logoText, strapline, mobileLogoText, navItems }) => (
   <header className="header">
-    <div className="header__logo">
+    <a href="#top" className="header__logo">
       <Logo height={40} />
-      <div className="header__logo-text" />
-    </div>
+      <span className="header__logo-text">
+        {logoText} &bull;
+        <span className="header__logo-strapline">{strapline}</span>
+      </span>
+    </a>
     <nav />
   </header>
 );

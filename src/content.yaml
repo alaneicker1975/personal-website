@@ -3,7 +3,8 @@ docTitle: Alan Eicker - Front-End Engineer
 preface: If you had 5 Alans you could rule the software universe. So I recommend hiring him and having him train 4 other guys to be as good as he is. Alan is the kind of front-end developer UX designers like myself dream of.
 
 header:
-  logoText: Alan Eicker <span class="header__logo__tagline">&bull; Front-End Engineer</span>
+  logoText: Alan Eicker
+  strapline: Front-End Engineer
   mobileLogoText: AE
   navItems:
     - href: /#about
