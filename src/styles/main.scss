@@ -2,6 +2,9 @@
 @import '../../node_modules/@atomikui/core/dist/styles/main.min.css';
 @import '../../node_modules/@atomikui/core-sass/abstracts/main.scss';
 
+// Atomikui overrides
+@import './quotation';
+
 // Global styles
 @import './base', './layout';
 

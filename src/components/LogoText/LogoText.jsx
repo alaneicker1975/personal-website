@@ -15,13 +15,12 @@ const LogoText = ({ mobileLogoText, logoText, strapline }) => (
 );
 
 LogoText.propTypes = {
-  logoText: PropTypes.string,
+  logoText: PropTypes.string.isRequired,
   strapline: PropTypes.string,
   mobileLogoText: PropTypes.string,
 };
 
 LogoText.defaultProps = {
-  logoText: '',
   strapline: '',
   mobileLogoText: '',
 };

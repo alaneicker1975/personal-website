@@ -1,0 +1,10 @@
+.atomikui-quotation {
+  border: 0;
+  padding: 0;
+
+  &--pullquote {
+    & > p {
+      color: $white;
+    }
+  }
+}

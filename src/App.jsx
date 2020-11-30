@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import ReactDOM from 'react-dom';
+import { Quotation } from '@atomikui/core';
 import { Header, Hero } from './components';
 import { AppProvider, AppContext } from './context';
 
@@ -25,6 +26,9 @@ const App = () => {
       </div>
       <main className="layout__main">
         <Hero {...hero} />
+        <section>
+          <Quotation pullquote>{preface}</Quotation>
+        </section>
       </main>
       <div className="layout__footer" />
     </div>

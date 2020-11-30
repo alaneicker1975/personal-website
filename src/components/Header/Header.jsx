@@ -9,7 +9,7 @@ const Header = ({ navItems, ...logoTextProps }) => (
       <Logo />
       <LogoText {...logoTextProps} />
     </Link>
-    <Nav navItems={navItems} />
+    {navItems && <Nav navItems={navItems} />}
   </header>
 );
 
@@ -25,7 +25,7 @@ Header.propTypes = {
 };
 
 Header.defaultProps = {
-  navItems: [],
+  navItems: null,
 };
 
 export default Header;
