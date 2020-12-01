@@ -1,11 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Quotation } from '@atomikui/core';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import { SkillsList } from '../../components';
 
-const About = ({ aboutHeading, skillsHeading, bio, skills, ...others }) => (
+const About = ({
+  preface,
+  aboutHeading,
+  skillsHeading,
+  bio,
+  skills,
+  ...others
+}) => (
   <section {...others}>
-    <Grid>
+    <Quotation pullquote>{preface}</Quotation>
+    <Grid className="margin-top-18">
       <Row>
         <Col lg={6}>
           <h3 className="section-heading">{aboutHeading}</h3>
@@ -15,7 +24,7 @@ const About = ({ aboutHeading, skillsHeading, bio, skills, ...others }) => (
         </Col>
         <Col lg={1} />
         <Col lg={5}>
-          <h3 className="section-heading margin-top-16 margin-top-collapse@large">
+          <h3 className="section-heading margin-top-24 margin-top-collapse@large">
             {skillsHeading}
           </h3>
           <SkillsList skills={skills} />
@@ -26,6 +35,7 @@ const About = ({ aboutHeading, skillsHeading, bio, skills, ...others }) => (
 );
 
 About.propTypes = {
+  preface: PropTypes.string,
   aboutHeading: PropTypes.string,
   skillsHeading: PropTypes.string,
   bio: PropTypes.arrayOf(PropTypes.string),
@@ -38,6 +48,7 @@ About.propTypes = {
 };
 
 About.defaultProps = {
+  preface: '',
   aboutHeading: '',
   skillsHeading: '',
   bio: '',

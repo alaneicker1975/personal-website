@@ -2,6 +2,9 @@
 @import '../../node_modules/@atomikui/core/dist/styles/main.min.css';
 @import '../../node_modules/@atomikui/core-sass/abstracts/main.scss';
 
+// Tools - variables, mixins, & functions
+@import './variables';
+
 // Atomikui overrides
 @import './quotation', './progress-bar';
 
@@ -14,28 +17,3 @@
 
 // Section styles
 @import '../sections//Hero/Hero';
-
-// svg {
-//   -webkit-animation: spin 70s linear infinite;
-//   -moz-animation: spin 70s linear infinite;
-//   animation: spin 70s linear infinite;
-// }
-
-// @-moz-keyframes spin {
-//   100% {
-//     -moz-transform: rotate(360deg);
-//   }
-// }
-
-// @-webkit-keyframes spin {
-//   100% {
-//     -webkit-transform: rotate(360deg);
-//   }
-// }
-
-// @keyframes spin {
-//   100% {
-//     -webkit-transform: rotate(360deg);
-//     transform: rotate(360deg);
-//   }
-// }

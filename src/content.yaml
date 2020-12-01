@@ -64,9 +64,9 @@ about:
     - label: Travis CI
       rank: 50
 
-corePrinciples:
+principles:
   heading: Core Principles
-  content:
+  principles:
     - title: Accessibility
       icon: accessibility
       text: Modern user experiences should strive to be empathetic, accommodating users with visual, cognitive and motor disabilities.

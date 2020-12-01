@@ -4,7 +4,7 @@ import { Link } from '@atomikui/core';
 import { Logo } from '../../components';
 
 const Hero = ({ subtitle, title, titleLeadIn, cta, ...others }) => (
-  <div className="hero" {...others}>
+  <section className="hero" {...others}>
     <Logo />
     <div className="hero__content">
       {titleLeadIn && <h3>{titleLeadIn}</h3>}
@@ -21,7 +21,7 @@ const Hero = ({ subtitle, title, titleLeadIn, cta, ...others }) => (
         </Link>
       )}
     </div>
-  </div>
+  </section>
 );
 
 Hero.propTypes = {
