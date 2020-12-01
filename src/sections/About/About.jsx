@@ -7,15 +7,15 @@ const About = ({ aboutHeading, skillsHeading, bio, skills, ...others }) => (
   <section {...others}>
     <Grid>
       <Row>
-        <Col md={6}>
+        <Col lg={6}>
           <h3 className="section-heading">{aboutHeading}</h3>
           {bio.map((paragraph, index) => (
             <p key={`bio-text-${index + 1}`}>{paragraph}</p>
           ))}
         </Col>
-        <Col md={1} />
-        <Col md={5}>
-          <h3 className="section-heading margin-top-16 margin-top-collapse@medium">
+        <Col lg={1} />
+        <Col lg={5}>
+          <h3 className="section-heading margin-top-16 margin-top-collapse@large">
             {skillsHeading}
           </h3>
           <SkillsList skills={skills} />
