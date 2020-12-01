@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
 import ReactDOM from 'react-dom';
 import { Quotation } from '@atomikui/core';
-import { Header, Hero } from './components';
+import { Header } from './components';
+import { Hero, About } from './sections';
 import { AppProvider, AppContext } from './context';
 
 const App = () => {
@@ -25,12 +26,17 @@ const App = () => {
         <Header {...header} />
       </div>
       <main className="layout__main">
-        <Hero {...hero} />
+        <Hero id="top" {...hero} />
         <section>
           <Quotation pullquote>{preface}</Quotation>
         </section>
+        <About id="about" {...about} />
       </main>
-      <div className="layout__footer" />
+      <div className="layout__footer">
+        <footer>
+          &copy; {new Date().getFullYear()} Alan Eicker. All rights reserved.
+        </footer>
+      </div>
     </div>
   );
 };

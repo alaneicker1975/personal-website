@@ -10,13 +10,23 @@
   }
 
   &__footer {
+    align-items: center;
     background: darken($blue-gray-900, 4%);
+    color: $white;
+    display: flex;
+    font-size: rem(12);
     height: rem(50);
+    justify-content: center;
   }
 
   &__main {
     height: calc(100vh - 110px);
+    padding-bottom: rem(36);
     overflow: auto;
+
+    & > * {
+      padding: rem(0 20);
+    }
 
     & > * + * {
       margin-top: rem(36);

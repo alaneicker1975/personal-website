@@ -3,14 +3,16 @@
 @import '../../node_modules/@atomikui/core-sass/abstracts/main.scss';
 
 // Atomikui overrides
-@import './quotation';
+@import './quotation', './progress-bar';
 
 // Global styles
-@import './base', './layout';
+@import './base', './layout', './section-heading';
 
 // component styles
-@import '../components/Header/Header', '../components/Nav/Nav',
-  '../components//Hero/Hero';
+@import '../components/Header/Header', '../components/Nav/Nav';
+
+// Section styles
+@import '../sections//Hero/Hero';
 
 // svg {
 //   -webkit-animation: spin 70s linear infinite;

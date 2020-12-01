@@ -8,8 +8,9 @@ body {
   background: $blue-gray-900;
   color: $white;
   font-family: 'Ubuntu', Arial, Helvetica, sans-serif !important;
+  font-size: rem(16);
   font-weight: $font-normal;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 h1,
@@ -22,5 +23,5 @@ h5 {
 
 section {
   margin: 0 auto;
-  max-width: rem(1024);
+  max-width: rem($site-width);
 }

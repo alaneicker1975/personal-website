@@ -26,7 +26,7 @@ footer:
 hero:
   titleLeadIn: Featured Project
   title: Atomik UI
-  subtitle: A Library of React Components for Rapid Application Development
+  subtitle: A Library of Accessible React Components for Rapid Application Development.
   cta:
     href: https://www.atomikui.com
     text: See it in Action
@@ -37,7 +37,9 @@ hero:
 about:
   aboutHeading: A Bit About Me
   skillsHeading: Areas of Expertise
-  bio: <p>I began my journey thirteen years ago as a junior front-end engineer for a small design company building ColdFusion websites for construction companies. Today, I lead the front-end efforts for one of America's largest insurance companies, working with technologies such as React and Node.js.</p><p>Throughout my career, I've seen the Web grow from simple static HTML websites into complex data-driven Progressive Web Apps. Over the years, I've invested countless hours honing my skills to stay on top of the next emerging technology trend. I'm not an expert at everything out there, but I'd be confident building just about anything UI related.</p>
+  bio:
+    - I began my journey thirteen years ago as a junior front-end engineer for a small design company building ColdFusion websites for construction companies. Today, I lead the front-end efforts for one of America's largest insurance companies, working with technologies such as React and Node.js.
+    - Throughout my career, I've seen the Web grow from simple static HTML websites into complex data-driven Progressive Web Apps. Over the years, I've invested countless hours honing my skills to stay on top of the next emerging technology trend. I'm not an expert at everything out there, but I'd be confident building just about anything UI related.
   skills:
     - label: HTML
       rank: 100
