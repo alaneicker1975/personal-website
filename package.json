@@ -12,6 +12,19 @@
   "keywords": [],
   "author": "Alan Eicker",
   "license": "ISC",
+  "prerender": {
+    "routes": [
+      "/"
+    ]
+  },
+  "staticFiles": {
+    "staticPath": [
+      {
+        "staticPath": "static",
+        "staticOutDir": "static"
+      }
+    ]
+  },
   "dependencies": {
     "@atomikui/core": "^0.9.3",
     "@atomikui/core-sass": "^0.2.0",
@@ -30,6 +43,8 @@
     "eslint": "^7.14.0",
     "eslint-config-atomikui": "^0.3.2",
     "parcel": "^1.12.4",
+    "parcel-plugin-prerender": "^1.4.1",
+    "parcel-plugin-static-files-copy": "^2.5.0",
     "sass": "^1.29.0",
     "stylelint": "^13.8.0",
     "stylelint-config-atomikui": "^0.1.0"
