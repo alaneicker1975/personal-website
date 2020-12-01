@@ -1,0 +1,21 @@
+.skills-list {
+  & > * + * {
+    margin-top: rem(12);
+  }
+
+  &__item {
+    & > * {
+      align-items: center;
+      display: flex;
+
+      & > :first-child {
+        flex: 0 rem(150);
+        line-height: 1;
+      }
+
+      & > :last-child {
+        flex: 1;
+      }
+    }
+  }
+}

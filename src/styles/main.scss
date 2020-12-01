@@ -9,7 +9,8 @@
 @import './base', './layout', './section-heading';
 
 // component styles
-@import '../components/Header/Header', '../components/Nav/Nav';
+@import '../components/Header/Header', '../components/Nav/Nav',
+  '../components/SkilsList/SkillsList';
 
 // Section styles
 @import '../sections//Hero/Hero';

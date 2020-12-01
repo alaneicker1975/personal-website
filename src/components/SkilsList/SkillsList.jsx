@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import { List, ListItem, ProgressBar } from '@atomikui/core';
 
 const SkillsList = ({ skills }) => (
-  <List loose>
+  <List className="skills-list">
     {skills.map(({ label, rank }, index) => (
-      <ListItem key={`skill-${index + 1}`}>
-        <div className="flex flex--align-middle">
-          <div style={{ flex: '0 150px', lineHeight: '1' }}>{label}</div>
-          <div className="flex flex__item--grow">
+      <ListItem className="skills-list__item" key={`skill-${index + 1}`}>
+        <div>
+          <div>{label}</div>
+          <div>
             <ProgressBar now={rank} theme="cyan" shape="pill" />
           </div>
         </div>
