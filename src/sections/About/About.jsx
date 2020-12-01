@@ -15,7 +15,9 @@ const About = ({ aboutHeading, skillsHeading, bio, skills, ...others }) => (
         </Col>
         <Col md={1} />
         <Col md={5}>
-          <h3 className="section-heading">{skillsHeading}</h3>
+          <h3 className="section-heading margin-top-16 margin-top-collapse@medium">
+            {skillsHeading}
+          </h3>
           <SkillsList skills={skills} />
         </Col>
       </Row>
