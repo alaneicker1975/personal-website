@@ -86,7 +86,6 @@ career:
       location: Northbrook, IL
       tenure: 2015 - present
       url: https://www.allstate.com/
-      description: With a group of other talented front-end engineers, I led the development of UI standards for enterprise wide initiatives. This included the production of several React component libraries, collaboration with designers to ensure the consistency of accessibility standards, as well as mentoring and onboarding junior developers.
       positionsHeld:
         - title: Lead Front-End Engineer
           duration: May 2017 - Present
@@ -95,7 +94,6 @@ career:
     - company: RealPage, Inc.
       location: Chicago, IL
       tenure: 2012 - 2015
-      description: As Lead Front-End Engineer for RealPage's LeaseStar division, I led a team that built a unified user interface for all of RealPage's LeaseStar products. The new service-driven user interface was built with Node.js, Angular, MongoDB, Express, HTML5 and CSS3.
       url: https://www.realpage.com/
       positionsHeld:
         - title: Lead Front-End Engineer
@@ -106,7 +104,6 @@ career:
       location: Arlington Heights, IL
       tenure: 2010 - 2012
       url: https://www.restaurant.com/
-      description: As a Senior Front-End Developer for Restaurant.com, I had the opportunity to work on a variety of projects including implementing the site's city and cuisine landing pages, setting up A/B and multivariate tests, and collaborated with software engineers to rearchitect the site's user interface using MVC3, CSS3 and HTML5.
       positionsHeld:
         - title: Senior Front-End Engineer
           duration: Nov 2010 - Apr 2012
@@ -114,7 +111,12 @@ career:
       location: Chicago, IL
       tenure: 2008 - 2010
       url: https://www.schwab.com/
-      description: During my tenure at optionsXpress (now Charles Schwab), I was responsible for the design and development of site pages including the commissions and broker comparison pages, educational resources such as the XpressMethod video library, and the webinars and workshops listing pages. I also worked with the marketing department to design and build numerous promotional landing pages, email newsletters and Flash banner ads.
+      positionsHeld:
+        - title: Web Designer / Front-End Engineer
+          duration: Feb 2008 - Nov 2010
+    - company: Leader Graphic Design
+      location: Rolling Meadows, IL
+      tenure: 2007 - 2008
       positionsHeld:
         - title: Web Designer / Front-End Engineer
           duration: Feb 2008 - Nov 2010

@@ -1,0 +1,9 @@
+.atomikui-card {
+  background: $blue-gray-800;
+  height: 100%;
+
+  &__header {
+    border-bottom: rem(1) solid $blue-gray-700;
+    padding-bottom: rem(16);
+  }
+}
