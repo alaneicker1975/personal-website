@@ -1,9 +1,9 @@
 .nav {
   a {
     color: $white;
-    font-size: rem(12);
+    font-size: rem(14);
     font-weight: $font-semibold;
-    text-transform: uppercase;
+    text-transform: lowercase;
 
     &:hover,
     &.is-active {
