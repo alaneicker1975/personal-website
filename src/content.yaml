@@ -16,6 +16,9 @@ header:
     - href: /#career
       text: Career
       title: Go to career section
+    - href: /#open-source
+      text: Open Source
+      title: Go to Open Source
     - href: /#contact
       text: Contact
       title: Go to contact page
@@ -78,7 +81,7 @@ principles:
       text: Nowadays, mobile-first development is key. Responsive, accessible, mobile-friendly user experiences are a must have.
 
 career:
-  heading: My Career Journey
+  heading: Career Journey
   preface: I've had the opportunity to work with some great companies. Check out my full resum&eacute to learn more about my career journey.
   downloadUrl: static/alan-eicker-resume.pdf
   jobHistory:
@@ -120,6 +123,20 @@ career:
       positionsHeld:
         - title: Web Designer / Front-End Engineer
           duration: Feb 2008 - Nov 2010
+
+openSource:
+  heading: Open Source Projects
+  preface: Contributing to the open source community is an important part of being a developer. Here are some projects that I have worked on.
+  projects:
+    - name: Atomik UI
+      url: https://www.npmjs.com/package/@atomikui/core
+      description: A Library of Accessible React Components for Rapid Application Development.
+    - name: Atomik UI - Core Sass
+      url: https://www.npmjs.com/package/@atomikui/core-sass
+      description: A small library of Sass utility classes, function, mixins, variables and 192 colors.
+    - name: Atomik UI - ESLint Config
+      url: https://www.npmjs.com/package/eslint-config-atomikui
+      description: The ESLint config for @atomikui/core.
 
 contact:
   contactHeading: Get In Touch

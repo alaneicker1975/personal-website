@@ -27,7 +27,7 @@ const Nav = ({ navItems }) => {
               target={target}
               title={title}
               className={classnames({
-                'is-active': section === text.toLowerCase(),
+                'is-active': section === text.toLowerCase().replace(/\s/, '-'),
               })}
             >
               {text}
