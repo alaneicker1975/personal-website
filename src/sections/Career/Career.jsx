@@ -6,7 +6,11 @@ import { Card, List, ListItem, Link } from '@atomikui/core';
 const Career = ({ downloadUrl, heading, jobHistory, preface, ...others }) => (
   <section {...others}>
     <h3 className="section-heading">{heading}</h3>
-    <p className="text-align-center margin-bottom-24">{preface}</p>
+    <p
+      className="text-align-center margin-bottom-24"
+      // eslint-disable-next-line react/no-danger
+      dangerouslySetInnerHTML={{ __html: preface }}
+    />
     <Grid>
       <Row>
         {jobHistory.map(({ company, location, positionsHeld }, index) => (
