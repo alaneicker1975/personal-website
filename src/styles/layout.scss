@@ -21,8 +21,9 @@
 
   &__main {
     height: calc(100vh - 110px);
-    padding-bottom: rem(36);
     overflow: auto;
+    padding-bottom: rem(36);
+    scroll-behavior: smooth;
 
     & > * {
       padding: rem(0 20);
