@@ -8,9 +8,7 @@ const SkillsList = ({ skills }) => (
       <ListItem className="skills-list__item" key={`skill-${index + 1}`}>
         <div>
           <div>{label}</div>
-          <div>
-            <ProgressBar now={rank} theme="cyan" shape="pill" />
-          </div>
+          <ProgressBar now={rank} theme="cyan" shape="pill" />
         </div>
       </ListItem>
     ))}
