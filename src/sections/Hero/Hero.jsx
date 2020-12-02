@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from '@atomikui/core';
-import { Logo } from '../../components';
+import { AtomikUILogo } from '../../components';
 
 const Hero = ({ subtitle, title, titleLeadIn, cta, ...others }) => (
   <section className="hero" {...others}>
-    <Logo />
+    <AtomikUILogo />
     <div className="hero__content">
       {titleLeadIn && <h3>{titleLeadIn}</h3>}
       <h1>{title}</h1>

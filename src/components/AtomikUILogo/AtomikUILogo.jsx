@@ -1,7 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const Logo = ({ width, height }) => (
+const AtomikUILogo = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -11,8 +10,6 @@ const Logo = ({ width, height }) => (
     viewBox="0 0 100 100"
     enableBackground="new 0 0 100 100"
     xmlSpace="preserve"
-    height={height}
-    width={width}
   >
     <g>
       <path
@@ -27,14 +24,4 @@ const Logo = ({ width, height }) => (
   </svg>
 );
 
-Logo.propTypes = {
-  height: PropTypes.number,
-  width: PropTypes.number,
-};
-
-Logo.defaultProps = {
-  height: null,
-  width: null,
-};
-
-export default Logo;
+export default AtomikUILogo;

@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from '@atomikui/core';
-import { Logo, LogoText, Nav } from '..';
+import { BeardLogo, LogoText, Nav } from '..';
 
 const Header = ({ navItems, ...logoTextProps }) => (
   <header className="header">
     <Link href="#top" className="header__logo">
-      <Logo />
+      <BeardLogo />
       <LogoText {...logoTextProps} />
     </Link>
     {navItems && <Nav navItems={navItems} />}

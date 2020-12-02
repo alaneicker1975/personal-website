@@ -15,21 +15,15 @@
     text-transform: lowercase;
 
     svg {
-      width: 30px;
+      width: rem(28);
     }
 
     & > * + * {
-      margin-left: rem(4);
+      margin-left: rem(8);
     }
   }
 
   @media (min-width: $breakpoint-medium) {
     padding: rem(0 20);
-
-    &__logo {
-      svg {
-        width: 30px;
-      }
-    }
   }
 }
