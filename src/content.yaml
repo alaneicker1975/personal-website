@@ -16,12 +16,9 @@ header:
     - href: /#career
       text: Career
       title: Go to career section
-    - href: /#open-source
-      text: Open Source
-      title: Go to Open Source
-    - href: /#contact
-      text: Contact
-      title: Go to contact page
+    - href: /#projects
+      text: Projects
+      title: Go to Projects
 
 footer:
   copyrightText: Built with care by Alan Eicker. All rights reserved.

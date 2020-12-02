@@ -30,7 +30,7 @@ const App = () => {
         <About id="about" {...{ preface, ...about }} />
         <Principles id="principles" {...principles} />
         <Career id="career" {...career} />
-        <OpenSource id="open-source" {...openSource} />
+        <OpenSource id="projects" {...openSource} />
         <div className="layout__footer">
           <Footer copyrightText={footer.copyrightText}>
             <ContactInfo {...contact} />
