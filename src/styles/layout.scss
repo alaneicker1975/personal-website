@@ -18,7 +18,7 @@
       padding: rem(36 20);
     }
 
-    & > * + *:not(#about) {
+    & > * + section:not(:nth-child(2)) {
       border-top: rem(1) solid $divider-color;
     }
   }
