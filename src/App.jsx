@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import ReactDOM from 'react-dom';
-import { Header, Footer } from './components';
+import { Header, Footer, ContactInfo, SocialMedia } from './components';
 import { Hero, About, Principles, Career, OpenSource } from './sections';
 import { AppProvider, AppContext } from './context';
 
@@ -16,6 +16,7 @@ const App = () => {
       footer,
       preface,
       openSource,
+      socialMedia,
     },
   } = useContext(AppContext);
 
@@ -31,7 +32,10 @@ const App = () => {
         <Career id="career" {...career} />
         <OpenSource id="open-source" {...openSource} />
         <div className="layout__footer">
-          <Footer copyrightText={footer.copyrightText} />
+          <Footer copyrightText={footer.copyrightText}>
+            <ContactInfo {...contact} />
+            <SocialMedia {...socialMedia} />
+          </Footer>
         </div>
       </main>
     </div>

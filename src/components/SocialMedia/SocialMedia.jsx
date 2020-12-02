@@ -1,39 +1,51 @@
-import React, { useContext } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { List, ListItem, Link } from '@atomikui/core';
-import { AppContext } from '../../context';
 
-const SocialMedia = () => {
-  const {
-    content: {
-      socialMedia: { socialMediaHeading, icons },
-    },
-  } = useContext(AppContext);
+const SocialMedia = ({ socialMediaHeading, icons }) => (
+  <>
+    <h4 className="section-subheading">{socialMediaHeading}</h4>
+    <List type="horizontal">
+      {icons.map(({ title, path, height, width, fill, viewBox, url }) => (
+        <ListItem key={title}>
+          <Link href={url} target="_blank" rel="noopener noreferrer">
+            <svg
+              className="margin-top-4"
+              fill={fill}
+              enableBackground={viewBox}
+              height={height}
+              width={width}
+              viewBox={viewBox}
+              xmlns="https://www.w3.org/2000/svg"
+            >
+              <title>{title}</title>
+              <path d={path} />
+            </svg>
+          </Link>
+        </ListItem>
+      ))}
+    </List>
+  </>
+);
 
-  return (
-    <>
-      <h4 className="section-subheading">{socialMediaHeading}</h4>
-      <List type="horizontal">
-        {icons.map(({ title, path, height, width, fill, viewBox, url }) => (
-          <ListItem key={title}>
-            <Link href={url} target="_blank" rel="noopener noreferrer">
-              <svg
-                className="margin-top-2"
-                fill={fill}
-                enableBackground={viewBox}
-                height={height}
-                width={width}
-                viewBox={viewBox}
-                xmlns="https://www.w3.org/2000/svg"
-              >
-                <title>{title}</title>
-                <path d={path} />
-              </svg>
-            </Link>
-          </ListItem>
-        ))}
-      </List>
-    </>
-  );
+SocialMedia.propTypes = {
+  socialMediaHeading: PropTypes.string,
+  icons: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      url: PropTypes.string,
+      path: PropTypes.string,
+      fill: PropTypes.string,
+      viewBox: PropTypes.string,
+      height: PropTypes.string,
+      width: PropTypes.string,
+    }),
+  ),
+};
+
+SocialMedia.defaultProps = {
+  socialMediaHeading: '',
+  icons: [],
 };
 
 export default SocialMedia;
