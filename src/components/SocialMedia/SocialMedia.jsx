@@ -8,7 +8,12 @@ const SocialMedia = ({ socialMediaHeading, icons }) => (
     <List type="horizontal">
       {icons.map(({ title, path, height, width, fill, viewBox, url }) => (
         <ListItem key={title}>
-          <Link href={url} target="_blank" rel="noopener noreferrer">
+          <Link
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            title={title}
+          >
             <svg
               className="margin-top-4"
               fill={fill}
@@ -37,8 +42,8 @@ SocialMedia.propTypes = {
       path: PropTypes.string,
       fill: PropTypes.string,
       viewBox: PropTypes.string,
-      height: PropTypes.string,
-      width: PropTypes.string,
+      height: PropTypes.number,
+      width: PropTypes.number,
     }),
   ),
 };
