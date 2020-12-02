@@ -8,9 +8,18 @@ body {
   background: $blue-gray-900;
   color: $white;
   font-family: 'Ubuntu', Arial, Helvetica, sans-serif !important;
-  font-size: rem(16);
+  font-size: rem(14);
   font-weight: $font-normal;
-  line-height: 1.7;
+  line-height: 1.6;
+
+  @media (min-width: $breakpoint-medium) {
+    font-size: rem(16);
+  }
+}
+
+a,
+.atomikui-link {
+  color: $cyan-400;
 }
 
 h1,

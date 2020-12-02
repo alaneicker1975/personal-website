@@ -47,6 +47,11 @@ Nav.propTypes = {
       rel: PropTypes.string,
       target: PropTypes.string,
     }),
-  ).isRequired,
+  ),
 };
+
+Nav.defaultProps = {
+  navItems: [],
+};
+
 export default Nav;

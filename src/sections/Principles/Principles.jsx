@@ -20,7 +20,11 @@ const Principles = ({ heading, principles, ...others }) => (
     <Grid>
       <Row>
         {principles.map(({ title, text, icon }, index) => (
-          <Col key={`principle-${index + 1}`} md={4}>
+          <Col
+            key={`principle-${index + 1}`}
+            md={4}
+            className="margin-top-24 margin-top-collapse@large"
+          >
             <div className="text-align-center">
               <Icon
                 className="margin-bottom-4"
