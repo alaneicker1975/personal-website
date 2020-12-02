@@ -1,6 +1,6 @@
 import React, { createContext } from 'react';
 import PropTypes from 'prop-types';
-import content from '../content.yaml';
+import content from '../../static/content.yaml';
 
 const AppContext = createContext({});
 

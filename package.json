@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "Personal Website of Alan Eicker, Front-End Engineer",
   "scripts": {
-    "build": "NODE_ENV=production parcel build src/index.html",
+    "build": "NODE_ENV=production parcel build src/index.html --public-url '.' --no-content-hash",
+    "postbuild": "cp src/CNAME dist && sed -i -e 's/ src=\"src.e31bb0bc.js\"//g' dist/index.html",
     "dev": "NODE_ENV=development parcel src/index.html --port 3000",
     "start": "node server.js",
     "lint:js": "eslint 'src/**/*.js' --fix --ignore-pattern '*.test.js'",
