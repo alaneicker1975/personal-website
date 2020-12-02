@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import { Logo, ContactInfo, SocialMedia } from '..';
+import { ContactInfo, SocialMedia } from '..';
 
 const Footer = ({ copyrightText }) => (
   <footer>
