@@ -4,8 +4,8 @@ import { List, ListItem, ProgressBar } from '@atomikui/core';
 
 const SkillsList = ({ skills }) => (
   <List className="skills-list">
-    {skills.map(({ label, rank }, index) => (
-      <ListItem className="skills-list__item" key={`skill-${index + 1}`}>
+    {skills.map(({ label, rank }) => (
+      <ListItem className="skills-list__item" key={label}>
         <div>
           <div>{label}</div>
           <ProgressBar now={rank} theme="cyan" shape="pill" />

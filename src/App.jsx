@@ -37,7 +37,7 @@ const App = () => {
             '180x180',
           ].map((size) => (
             <link
-              key={`icon-${size}`}
+              key={size}
               rel="apple-touch-icon"
               sizes={size}
               href={`images/apple-icon-${size}.png`}

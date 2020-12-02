@@ -13,8 +13,8 @@ const Career = ({ downloadUrl, heading, jobHistory, preface, ...others }) => (
     />
     <Grid>
       <Row>
-        {jobHistory.map(({ company, location, positionsHeld }, index) => (
-          <Col md={4} key={`job-${index + 1}`} className="margin-bottom-16">
+        {jobHistory.map(({ company, location, positionsHeld }) => (
+          <Col md={4} key={company} className="margin-bottom-16">
             <Card
               title={
                 <div className="text-align-center">

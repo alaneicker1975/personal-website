@@ -19,8 +19,8 @@ const Nav = ({ navItems }) => {
   return (
     <nav>
       <List className="nav" type="horizontal">
-        {navItems.map(({ href, rel, target, text, title }, index) => (
-          <ListItem key={`nav-item-${index + 1}`}>
+        {navItems.map(({ href, rel, target, text, title }) => (
+          <ListItem key={title}>
             <Link
               href={href}
               rel={rel}

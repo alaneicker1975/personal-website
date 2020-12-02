@@ -19,9 +19,9 @@ const Principles = ({ heading, principles, ...others }) => (
     <h3 className="section-heading">{heading}</h3>
     <Grid>
       <Row>
-        {principles.map(({ title, text, icon }, index) => (
+        {principles.map(({ title, text, icon }) => (
           <Col
-            key={`principle-${index + 1}`}
+            key={title}
             md={4}
             className="margin-top-24 margin-top-collapse@large"
           >
