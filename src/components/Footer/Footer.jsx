@@ -1,6 +1,7 @@
 import React, { Children } from 'react';
 import PropTypes from 'prop-types';
 import { Grid, Row, Col } from 'react-flexbox-grid';
+import { BeardLogo } from '..';
 
 const Footer = ({ copyrightText, children }) => {
   if (children && children.length > 2) {
@@ -26,7 +27,8 @@ const Footer = ({ copyrightText, children }) => {
           </Row>
         </Grid>
       )}
-      <p className="margin-top-20 text-size-12">
+      <BeardLogo className="margin-top-24" width={35} />
+      <p className="margin-top-8 text-size-12">
         &copy; {new Date().getFullYear()} {copyrightText}
       </p>
     </footer>

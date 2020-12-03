@@ -1,10 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const BeardLogo = () => (
+const BeardLogo = ({ className, width, height }) => (
   <svg
+    className={className}
     enableBackground="new 0 0 512.002 512.002"
     viewBox="0 0 512.002 512.002"
     xmlns="http://www.w3.org/2000/svg"
+    height={height}
+    width={width}
   >
     <g>
       <path
@@ -34,5 +38,17 @@ const BeardLogo = () => (
     </g>
   </svg>
 );
+
+BeardLogo.propTypes = {
+  className: PropTypes.string,
+  height: PropTypes.number,
+  width: PropTypes.number,
+};
+
+BeardLogo.defaultProps = {
+  className: '',
+  height: null,
+  width: null,
+};
 
 export default BeardLogo;
