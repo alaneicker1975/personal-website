@@ -5,21 +5,23 @@ import { AtomikUILogo } from '../../components';
 
 const Hero = ({ subtitle, title, titleLeadIn, cta, ...others }) => (
   <section className="hero" {...others}>
-    <AtomikUILogo />
     <div className="hero__content">
-      {titleLeadIn && <h3>{titleLeadIn}</h3>}
-      <h1>{title}</h1>
-      <h2>{subtitle}</h2>
-      {cta && (
-        <Link
-          className="atomikui-btn atomikui-btn--red atomikui-btn--pill"
-          href={cta.href}
-          rel={cta.rel}
-          target={cta.target}
-        >
-          {cta.text}
-        </Link>
-      )}
+      <AtomikUILogo />
+      <div>
+        {titleLeadIn && <h3>{titleLeadIn}</h3>}
+        <h1>{title}</h1>
+        <h2>{subtitle}</h2>
+        {cta && (
+          <Link
+            className="atomikui-btn atomikui-btn--red atomikui-btn--pill"
+            href={cta.href}
+            rel={cta.rel}
+            target={cta.target}
+          >
+            {cta.text}
+          </Link>
+        )}
+      </div>
     </div>
   </section>
 );

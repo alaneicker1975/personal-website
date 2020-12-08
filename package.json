@@ -6,7 +6,6 @@
     "build": "NODE_ENV=production parcel build src/index.html --public-url '.' --no-content-hash",
     "postbuild": "sed -i -e 's/ src=\"src.e31bb0bc.js\"//g' dist/index.html",
     "dev": "NODE_ENV=development parcel src/index.html --port 3000",
-    "start": "node server.js",
     "lint:js": "eslint 'src/**/*.js' --fix --ignore-pattern '*.test.js'",
     "lint:scss": "stylelint ./src/**/*.scss  --config .stylelintrc --fix",
     "deploy": "gh-pages -d dist"
