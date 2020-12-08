@@ -80,7 +80,7 @@ principles:
 career:
   heading: Career Journey
   preface: I've had the opportunity to work with some great companies. Check out my full resum&eacute to learn more about my career journey.
-  downloadUrl: static/alan-eicker-resume.pdf
+  downloadUrl: alan-eicker-resume.pdf
   jobHistory:
     - company: Allstate Insurance
       location: Northbrook, IL
@@ -90,36 +90,35 @@ career:
         - title: Lead Front-End Engineer
           duration: May 2017 - Present
         - title: Senior Front-End Engineer
-          duration: May 2015 - Mar 2017
+          duration: May 2015 - March 2017
     - company: RealPage, Inc.
       location: Chicago, IL
       tenure: 2012 - 2015
       url: https://www.realpage.com/
       positionsHeld:
         - title: Lead Front-End Engineer
-          duration: May 2014 - Mar 2015
+          duration: May 2014 - March 2015
         - title: Senior Front-End Engineer
-          duration: May 2012 - May 2014
+          duration: April 2012 - May 2014
     - company: Restaurant.com
       location: Arlington Heights, IL
       tenure: 2010 - 2012
       url: https://www.restaurant.com/
       positionsHeld:
         - title: Senior Front-End Engineer
-          duration: Nov 2010 - Apr 2012
+          duration: November 2010 - April 2012
     - company: optionsXpress
       location: Chicago, IL
       tenure: 2008 - 2010
       url: https://www.schwab.com/
       positionsHeld:
         - title: Web Designer / Front-End Engineer
-          duration: Feb 2008 - Nov 2010
+          duration: February 2008 - November 2010
     - company: Leader Graphic Design
       location: Rolling Meadows, IL
-      tenure: 2007 - 2008
       positionsHeld:
         - title: Web Designer / Front-End Engineer
-          duration: Feb 2008 - Nov 2010
+          duration: March 2007 - February 2008
 
 openSource:
   heading: Open Source Projects
