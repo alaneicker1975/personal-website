@@ -15,9 +15,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: rem($site-width);
     padding: rem(50 20);
     text-align: center;
+    width: 100%;
 
     svg {
       flex: rem(160) 0 0;
@@ -87,6 +87,7 @@
 
     &__content {
       margin-bottom: rem(-24);
+      max-width: rem($site-width);
       position: relative;
       top: rem(24);
     }
