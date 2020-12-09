@@ -82,7 +82,7 @@
     }
   }
 
-  @media (min-width: 1178px) {
+  @media (min-width: pixel($site-width)) {
     margin-bottom: rem(56);
 
     &__content {
