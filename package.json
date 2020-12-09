@@ -8,7 +8,7 @@
     "start": "NODE_ENV=development parcel src/index.html --port 3000",
     "lint:js": "eslint 'src/**/*.js' --fix --ignore-pattern '*.test.js'",
     "lint:scss": "stylelint ./src/**/*.scss  --config .stylelintrc --fix",
-    "deploy": "gh-pages -d dist"
+    "deploy": "yarn build && gh-pages -d dist"
   },
   "keywords": [],
   "author": "Alan Eicker",
