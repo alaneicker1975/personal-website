@@ -1,5 +1,10 @@
 .hero {
   background: darken($blue-gray-900, 4%);
+  background: linear-gradient(
+    0deg,
+    rgba(14, 21, 25, 1) 0%,
+    rgba(24, 31, 35, 1) 76%
+  );
   display: flex;
   justify-content: center;
   padding: 0;
@@ -66,8 +71,6 @@
   }
 
   @media (min-width: $breakpoint-large) {
-    background: darken($blue-gray-900, 7%);
-
     &__content {
       h1 {
         font-size: rem(85);
