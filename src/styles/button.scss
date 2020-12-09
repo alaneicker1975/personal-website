@@ -1,0 +1,9 @@
+.atomikui-btn:not(.atomikui-btn--link),
+a.atomikui-btn:not(.atomikui-btn--link) {
+  text-transform: lowercase;
+  font-size: rem(16);
+
+  &:hover {
+    text-decoration: none;
+  }
+}
