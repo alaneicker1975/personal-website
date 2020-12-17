@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
 import {
   faStar,
@@ -30,6 +31,7 @@ const EasterEgg = ({ isActive, onClick }) => {
     ['dollarsign', faDollarSign],
   ];
 
+  const [isJackpot, setIsJackpot] = useState(false);
   const [score, setScore] = useState(0);
   const [scoreUpdateMessage, setScoreUpdateMessage] = useState(
     'Come on. What do you have to lose?',
@@ -42,9 +44,16 @@ const EasterEgg = ({ isActive, onClick }) => {
     return icons[random];
   };
 
+  const triggerJackpot = () => {
+    setIsJackpot(true);
+
+    setTimeout(() => {
+      setIsJackpot(false);
+    }, 7000);
+  };
+
   const getResults = () => {
     const results = {};
-    const winAlert = null;
 
     slots.forEach(([label]) => {
       if (results[label]) {
@@ -63,6 +72,10 @@ const EasterEgg = ({ isActive, onClick }) => {
 
     setScoreUpdateMessage('Not bad. Try again.');
 
+    if (dollarsign > 0) {
+      setScoreUpdateMessage(`Not bad. You got $${dollarsign}`);
+    }
+
     if (twoOfAKind) {
       setScoreUpdateMessage('You got 2 of a kind!');
     }
@@ -73,6 +86,7 @@ const EasterEgg = ({ isActive, onClick }) => {
 
     if (jackpot) {
       setScoreUpdateMessage('You got a Jackpot!!');
+      triggerJackpot();
     }
 
     setScore(
@@ -115,7 +129,11 @@ const EasterEgg = ({ isActive, onClick }) => {
   return (
     <Overlay onClick={onClick} isActive={isActive}>
       <div className="slot-machine">
-        <div className="slot-machine__light">
+        <div
+          className={classnames('slot-machine__light', {
+            'is-jackpot': isJackpot,
+          })}
+        >
           <Icon icon={faLightbulb} size="2x" />
         </div>
         <div className="text-size-24 text-weight-semibold margin-top-16 margin-bottom-16">
@@ -135,9 +153,7 @@ const EasterEgg = ({ isActive, onClick }) => {
             {scoreUpdateMessage}
           </div>
         )}
-        <div className="margin-top-16 margin-bottom-16">
-          Your score: {score}
-        </div>
+        <div className="margin-bottom-16">Your score: {score}</div>
         <Button theme="red" shape="pill" onClick={pullLever}>
           Pull Lever
         </Button>

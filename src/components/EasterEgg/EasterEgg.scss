@@ -21,7 +21,17 @@
 
     & > svg {
       & > path {
-        fill: $red-200;
+        fill: $red-700;
+      }
+    }
+
+    &.is-jackpot {
+      animation: jackpot 0.3s ease-in-out infinite;
+
+      & > svg {
+        & > path {
+          fill: white;
+        }
       }
     }
   }
@@ -111,5 +121,16 @@
         }
       }
     }
+  }
+}
+
+@keyframes jackpot {
+  from {
+    background: $red-500;
+    box-shadow: none;
+  }
+  to {
+    background: $red-300;
+    box-shadow: 0 0 20px $red-100;
   }
 }
