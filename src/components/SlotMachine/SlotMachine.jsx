@@ -17,7 +17,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { Overlay, Button } from '@atomikui/core';
 
-const EasterEgg = ({ isActive, onClick }) => {
+const SlotMachine = ({ isActive, onClick }) => {
   const icons = [
     ['lemon', faLemon],
     ['star', faStar],
@@ -66,26 +66,25 @@ const EasterEgg = ({ isActive, onClick }) => {
     const twoOfAKind = Object.keys(results).length === 2 ? 1000 : 0;
     const threeOfAKind = Object.keys(results).length === 1 ? 5000 : 0;
 
-    const stars = (results.star || 0) * 500;
-    const dollarsign = (results.dollarsign || 0) * 100;
-    const jackpot = results.bullseye === 3 ? 10000 : 0;
+    const luckyJackpot = results.bullseye === 3;
+    const jackpot = luckyJackpot ? 10000 : 0;
 
-    setScoreUpdateMessage('Not bad. Try again.');
+    const stars = (results.star || 0) * 100;
+    const dollarsign = (results.dollarsign || 0) * 500;
 
-    if (dollarsign > 0) {
-      setScoreUpdateMessage(`Not bad. You got $${dollarsign}`);
+    setScoreUpdateMessage('Sorry. Try again.');
+
+    if (dollarsign > 0 || stars > 0) {
+      setScoreUpdateMessage(`Not bad. You got $${dollarsign + stars} points`);
     }
-
     if (twoOfAKind) {
-      setScoreUpdateMessage('You got 2 of a kind!');
+      setScoreUpdateMessage('Nice! You got 2 of a kind!');
     }
-
     if (threeOfAKind) {
-      setScoreUpdateMessage('You got 3 of a kind!');
+      setScoreUpdateMessage('Sweet! You got 3 of a kind!');
     }
-
-    if (jackpot) {
-      setScoreUpdateMessage('You got a Jackpot!!');
+    if (luckyJackpot) {
+      setScoreUpdateMessage('Whoa! You got a Jackpot!!');
       triggerJackpot();
     }
 
@@ -136,9 +135,10 @@ const EasterEgg = ({ isActive, onClick }) => {
         >
           <Icon icon={faLightbulb} size="2x" />
         </div>
-        <div className="text-size-24 text-weight-semibold margin-top-16 margin-bottom-16">
+        <div className="text-size-24 text-weight-semibold margin-top-16">
           Feeling Lucky?
         </div>
+        <div className="margin-bottom-16">Get 3 bullseyes for a jackpot</div>
         <div className="slot-machine__hd">
           {slots.map(([label, icon], i) => (
             <div key={`slot-${i + 1}`} className="slot-machine__slot">
@@ -149,11 +149,13 @@ const EasterEgg = ({ isActive, onClick }) => {
           ))}
         </div>
         {scoreUpdateMessage && (
-          <div className="margin-top-16 margin-bottom-16 text-size-20">
+          <div className="margin-top-16 margin-bottom-16">
             {scoreUpdateMessage}
           </div>
         )}
-        <div className="margin-bottom-16">Your score: {score}</div>
+        <div className="margin-bottom-16 text-weight-semibold">
+          Your score: {Number(score).toLocaleString()}
+        </div>
         <Button theme="red" shape="pill" onClick={pullLever}>
           Pull Lever
         </Button>
@@ -161,14 +163,15 @@ const EasterEgg = ({ isActive, onClick }) => {
     </Overlay>
   );
 };
-EasterEgg.propTypes = {
+
+SlotMachine.propTypes = {
   isActive: PropTypes.bool,
   onClick: PropTypes.func,
 };
 
-EasterEgg.defaultProps = {
+SlotMachine.defaultProps = {
   isActive: false,
   onClick: null,
 };
 
-export default EasterEgg;
+export default SlotMachine;

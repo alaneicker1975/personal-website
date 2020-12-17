@@ -2,7 +2,7 @@ import React, { Children, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Button } from '@atomikui/core';
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import { BeardLogo, EasterEgg } from '..';
+import { BeardLogo, SlotMachine } from '..';
 
 const Footer = ({ copyrightText, children }) => {
   const [showSurprise, setShowSurprise] = useState(false);
@@ -42,7 +42,7 @@ const Footer = ({ copyrightText, children }) => {
       <p className="margin-top-8 text-size-12">
         &copy; {new Date().getFullYear()} {copyrightText}
       </p>
-      <EasterEgg
+      <SlotMachine
         isActive={showSurprise}
         onClick={() => setShowSurprise(false)}
       />
