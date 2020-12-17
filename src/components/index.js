@@ -7,3 +7,4 @@ export { default as LogoText } from './LogoText';
 export { default as SkillsList } from './SkilsList';
 export { default as ContactInfo } from './ContactInfo';
 export { default as SocialMedia } from './SocialMedia';
+export { default as EasterEgg } from './EasterEgg';

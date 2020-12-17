@@ -7,3 +7,20 @@ a.atomikui-btn:not(.atomikui-btn--link) {
     text-decoration: none;
   }
 }
+
+.atomikui-btn--hollow {
+  svg {
+    transition: all 0.2s linear;
+  }
+
+  &:hover {
+    & > svg {
+      transform: scale(1.2);
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background: transparent;
+  }
+}

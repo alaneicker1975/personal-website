@@ -1,0 +1,115 @@
+.slot-machine {
+  background: $blue-gray-900;
+  display: flex;
+  flex-direction: column;
+  min-width: rem(320);
+  padding: rem(24);
+  position: relative;
+
+  &__light {
+    align-items: center;
+    background: $red-500;
+    border-radius: 50%;
+    display: flex;
+    height: rem(60);
+    justify-content: center;
+    left: 50%;
+    position: absolute;
+    top: rem(-30);
+    transform: translateX(-50%);
+    width: rem(60);
+
+    & > svg {
+      & > path {
+        fill: $red-200;
+      }
+    }
+  }
+
+  &__hd {
+    display: flex;
+  }
+
+  &__slot {
+    font-size: rem(100);
+    font-weight: $font-bold;
+    height: rem(150);
+    padding: rem(8);
+    text-align: center;
+
+    & > * {
+      align-items: center;
+      background: lighten($blue-gray-900, 5%);
+      display: flex;
+      flex: 1;
+      height: 100%;
+      justify-content: center;
+      padding: rem(0 8);
+      width: rem(100);
+
+      & > svg {
+        font-size: rem(70);
+      }
+
+      & > svg.fa-star {
+        & > path {
+          fill: $sky-blue-200;
+        }
+      }
+
+      & > svg.fa-lemon {
+        & > path {
+          fill: $yellow-700;
+        }
+      }
+
+      & > svg.fa-dollar-sign {
+        & > path {
+          fill: $lime-500;
+        }
+      }
+
+      & > svg.fa-apple-alt {
+        & > path {
+          fill: $red-500;
+        }
+      }
+
+      & > svg.fa-atom {
+        & > path {
+          fill: $deep-purple-300;
+        }
+      }
+
+      & > svg.fa-bacon {
+        & > path {
+          fill: $deep-orange-700;
+        }
+      }
+
+      & > svg.fa-bomb {
+        & > path {
+          fill: $blue-gray-300;
+        }
+      }
+
+      & > svg.fa-bullseye {
+        & > path {
+          fill: $pink-500;
+        }
+      }
+
+      & > svg.fa-carrot {
+        & > path {
+          fill: $orange-500;
+        }
+      }
+
+      & > svg.fa-chess-king {
+        & > path {
+          fill: $yellow-200;
+        }
+      }
+    }
+  }
+}
