@@ -63,34 +63,41 @@ const SlotMachine = ({ isActive, onClick }) => {
       results[label] = 1;
     });
 
-    const twoOfAKind = Object.keys(results).length === 2 ? 1000 : 0;
-    const threeOfAKind = Object.keys(results).length === 1 ? 5000 : 0;
+    const twoOfAKindScore = Object.keys(results).length === 2 ? 1000 : 0;
+    const threeOfAKindScore = Object.keys(results).length === 1 ? 5000 : 0;
 
-    const luckyJackpot = results.bullseye === 3;
-    const jackpot = luckyJackpot ? 10000 : 0;
+    const jackpot = results.bullseye === 3;
+    const jackpotScore = jackpot ? 10000 : 0;
 
-    const stars = (results.star || 0) * 100;
-    const dollarsign = (results.dollarsign || 0) * 500;
+    const starsScore = (results.star || 0) * 100;
+    const dollarsignScore = (results.dollarsign || 0) * 500;
 
     setScoreUpdateMessage('Sorry. Try again.');
 
-    if (dollarsign > 0 || stars > 0) {
-      setScoreUpdateMessage(`Not bad. You got $${dollarsign + stars} points`);
+    if (dollarsignScore > 0 || starsScore > 0) {
+      setScoreUpdateMessage(
+        `Not bad. You got $${dollarsignScore + starsScore} points`,
+      );
     }
-    if (twoOfAKind) {
+    if (twoOfAKindScore) {
       setScoreUpdateMessage('Nice! You got 2 of a kind!');
     }
-    if (threeOfAKind) {
+    if (threeOfAKindScore) {
       setScoreUpdateMessage('Sweet! You got 3 of a kind!');
     }
-    if (luckyJackpot) {
+    if (jackpot) {
       setScoreUpdateMessage('Whoa! You got a Jackpot!!');
       triggerJackpot();
     }
 
     setScore(
       (prevScore) =>
-        prevScore + (twoOfAKind + threeOfAKind + stars + dollarsign + jackpot),
+        prevScore +
+        (twoOfAKindScore +
+          threeOfAKindScore +
+          starsScore +
+          dollarsignScore +
+          jackpotScore),
     );
   };
 
