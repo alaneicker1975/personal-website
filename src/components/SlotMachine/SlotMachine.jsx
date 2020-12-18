@@ -144,7 +144,7 @@ const SlotMachine = ({ isActive, onClick }) => {
   }, [shuffling]);
 
   return (
-    <Overlay onClick={onClick} isActive={isActive}>
+    <Overlay isActive={isActive}>
       <div className="slot-machine">
         <div
           className={classnames('slot-machine__light', {
@@ -175,10 +175,10 @@ const SlotMachine = ({ isActive, onClick }) => {
           Your score: {Number(score).toLocaleString()}
         </div>
         <Button theme="red" shape="pill" onClick={pullLever}>
-          Pull Lever
+          spin
         </Button>
         <Button className="margin-top-16" theme="link" onClick={quit}>
-          Get me outta here
+          quit game
         </Button>
       </div>
     </Overlay>
