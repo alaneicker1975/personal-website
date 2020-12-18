@@ -8,6 +8,10 @@ a.atomikui-btn:not(.atomikui-btn--link) {
   }
 }
 
+.atomikui-btn--link {
+  color: $cyan-500;
+}
+
 .atomikui-btn--hollow {
   svg {
     transition: all 0.2s linear;

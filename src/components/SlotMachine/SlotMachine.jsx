@@ -31,13 +31,13 @@ const SlotMachine = ({ isActive, onClick }) => {
     ['dollarsign', faDollarSign],
   ];
 
+  const initialMessage = 'Come on. What do you have to lose?';
+
   const [isJackpot, setIsJackpot] = useState(false);
   const [score, setScore] = useState(0);
-  const [scoreUpdateMessage, setScoreUpdateMessage] = useState(
-    'Come on. What do you have to lose?',
-  );
   const [slots, setSlots] = useState([]);
   const [shuffling, setShuffling] = useState(null);
+  const [scoreUpdateMessage, setScoreUpdateMessage] = useState(initialMessage);
 
   const getRandomIcon = () => {
     const random = Math.floor(Math.random() * icons.length);
@@ -115,8 +115,19 @@ const SlotMachine = ({ isActive, onClick }) => {
     }, 30);
   };
 
+  const reset = () => {
+    setSlots([icons[1], icons[2], icons[3]]);
+    setScore(0);
+    setScoreUpdateMessage(initialMessage);
+  };
+
+  const quit = () => {
+    onClick();
+    reset();
+  };
+
   useEffect(() => {
-    shuffleSlots();
+    reset();
   }, []);
 
   useEffect(() => {
@@ -158,6 +169,9 @@ const SlotMachine = ({ isActive, onClick }) => {
         </div>
         <Button theme="red" shape="pill" onClick={pullLever}>
           Pull Lever
+        </Button>
+        <Button className="margin-top-16" theme="link" onClick={quit}>
+          Get me outta here
         </Button>
       </div>
     </Overlay>
