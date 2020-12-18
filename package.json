@@ -4,7 +4,6 @@
   "description": "Personal Website of Alan Eicker, Front-End Engineer",
   "scripts": {
     "build": "NODE_ENV=production parcel build src/index.html --public-url '.' --no-content-hash",
-    "postbuild": "sed -i -e 's/ src=\"src.e31bb0bc.js\"//g' dist/index.html",
     "start": "NODE_ENV=development parcel src/index.html --port 3000",
     "lint:js": "eslint 'src/**/*.js' --fix --ignore-pattern '*.test.js'",
     "lint:scss": "stylelint ./src/**/*.scss  --config .stylelintrc --fix",
@@ -29,6 +28,7 @@
   "dependencies": {
     "@atomikui/core": "^0.9.3",
     "@atomikui/core-sass": "^0.2.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.13",
     "classnames": "^2.2.6",
@@ -47,6 +47,7 @@
     "eslint-config-atomikui": "^0.3.2",
     "gh-pages": "^3.1.0",
     "parcel": "^1.12.4",
+    "parcel-plugin-compress": "^2.0.2",
     "parcel-plugin-prerender": "^1.4.1",
     "parcel-plugin-static-files-copy": "^2.5.0",
     "sass": "^1.29.0",
