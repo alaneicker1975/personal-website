@@ -161,7 +161,7 @@ const SlotMachine = ({ isActive, onClick }) => {
           {slots.map(([label, icon], i) => (
             <div key={`slot-${i + 1}`} className="slot-machine__slot">
               <div>
-                <Icon icon={icon} />
+                <Icon icon={icon} title={label} />
               </div>
             </div>
           ))}
