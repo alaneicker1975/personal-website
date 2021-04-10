@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Quotation } from '@atomikui/core';
+import Quotation from '@atomikui/core/dist/components/quotation';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import { SkillsList } from '../../components';
 

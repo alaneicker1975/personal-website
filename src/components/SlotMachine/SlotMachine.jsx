@@ -15,7 +15,8 @@ import {
   faChessKing,
   faLightbulb,
 } from '@fortawesome/free-solid-svg-icons';
-import { Overlay, Button } from '@atomikui/core';
+import Overlay from '@atomikui/core/dist/components/overlay';
+import Button from '@atomikui/core/dist/components/button';
 
 const SlotMachine = ({ isActive, onClick }) => {
   const icons = [

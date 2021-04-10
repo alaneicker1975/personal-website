@@ -1,6 +1,6 @@
 import React, { Children, useState } from 'react';
 import PropTypes from 'prop-types';
-import { Button } from '@atomikui/core';
+import Button from '@atomikui/core/dist/components/button';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import { BeardLogo, SlotMachine } from '..';
 

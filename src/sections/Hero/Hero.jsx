@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from '@atomikui/core';
+import Link from '@atomikui/core/dist/components/link';
 import { AtomikUILogo } from '../../components';
 
 const Hero = ({ subtitle, title, titleLeadIn, cta, ...others }) => (

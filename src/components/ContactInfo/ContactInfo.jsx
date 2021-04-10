@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link, List, ListItem } from '@atomikui/core';
+import Link from '@atomikui/core/dist/components/link';
+import List from '@atomikui/core/dist/components/list';
+import ListItem from '@atomikui/core/dist/components/list-item';
 
 const ContactInfo = ({ email, phone, contactHeading }) => (
   <>

@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { List, ListItem, ProgressBar } from '@atomikui/core';
+import List from '@atomikui/core/dist/components/list';
+import ListItem from '@atomikui/core/dist/components/list-item';
+import ProgressBar from '@atomikui/core/dist/components/progress-bar';
 
 const SkillsList = ({ skills }) => (
   <List className="skills-list">
