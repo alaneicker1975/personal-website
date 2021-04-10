@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import Link from '@atomikui/core/dist/components/link';
-import List from '@atomikui/core/dist/components/list';
-import ListItem from '@atomikui/core/dist/components/list-item';
-import Card from '@atomikui/core/dist/components/card';
+import Link from '@atomikui-core/link';
+import List from '@atomikui-core/list';
+import ListItem from '@atomikui-core/list-item';
+import Card from '@atomikui-core/card';
 
 const Career = ({ downloadUrl, heading, jobHistory, preface, ...others }) => (
   <section {...others}>

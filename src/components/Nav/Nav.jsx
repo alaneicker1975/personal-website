@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import Link from '@atomikui/core/dist/components/link';
-import List from '@atomikui/core/dist/components/list';
-import ListItem from '@atomikui/core/dist/components/list-item';
+import Link from '@atomikui-core/link';
+import List from '@atomikui-core/list';
+import ListItem from '@atomikui-core/list-item';
 
 const Nav = ({ navItems }) => {
   const [section, setSection] = useState(null);

@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from '@atomikui/core/dist/components/link';
-import List from '@atomikui/core/dist/components/list';
-import ListItem from '@atomikui/core/dist/components/list-item';
+import Link from '@atomikui-core/link';
+import List from '@atomikui-core/list';
+import ListItem from '@atomikui-core/list-item';
 
 const OpenSource = ({ preface, heading, projects, ...others }) => (
   <section {...others}>

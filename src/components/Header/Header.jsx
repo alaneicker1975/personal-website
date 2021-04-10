@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from '@atomikui/core/dist/components/link';
+import Link from '@atomikui-core/link';
 import { BeardLogo, LogoText, Nav } from '..';
 
 const Header = ({ navItems, ...logoTextProps }) => (

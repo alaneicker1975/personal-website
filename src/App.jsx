@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import ReactDOM from 'react-dom';
-import Portal from '@atomikui/core/dist/components/portal';
+import Portal from '@atomikui-core/portal';
 import { Header, Footer, ContactInfo, SocialMedia } from './components';
 import { Hero, About, Principles, Career, OpenSource } from './sections';
 import { AppProvider, AppContext } from './context';
